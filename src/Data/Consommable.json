@@ -1,0 +1,24 @@
+[
+    {
+      "ID_consommable": "C001",
+      "Designation_consommable": "Stylo",
+      "Stock": 100,
+      "Reference": "REF001",
+      "ID_type": 1
+    },
+    {
+      "ID_consommable": "C002",
+      "Designation_consommable": "Cahier",
+      "Stock": 50,
+      "Reference": "REF002",
+      "ID_type": 2
+    },
+    {
+      "ID_consommable": "C003",
+      "Designation_consommable": "Crayon",
+      "Stock": 75,
+      "Reference": "REF003",
+      "ID_type": 1
+    }
+  ]
+  

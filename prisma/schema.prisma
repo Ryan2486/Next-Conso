@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model consommable {
+  ID_consommable          String      @id()
+  Designation_consommable String
+  Stock                   Decimal     @db.Decimal
+  Reference               String
+  ID_type                 Int
+  type                    type        @relation(fields: [ID_type], references: [ID_type], onDelete: Cascade)
+  entree                  entree[]
+  sortie                  sortie[]
+  utiliser                utiliser[]
+}
+
+model entree {
+  ID_entree      Int         @id @default(autoincrement())
+  Date_entree    DateTime    @db.Date
+  Qte_entree     Decimal     @db.Decimal
+  ID_consommable String
+  consommable    consommable @relation(fields: [ID_consommable], references: [ID_consommable], onDelete: Cascade)
+}
+
+model materiel {
+  Designation_materiel String
+  Reference_materiel   String     @id
+  utiliser             utiliser[]
+}
+
+model service {
+  ID_service          Int      @id @default(autoincrement())
+  Designation_service String
+  sortie              sortie[]
+}
+
+model sortie {
+  ID_sortie      Int         @id @default(autoincrement())
+  Date_sortie    DateTime    @db.Date
+  Qte_sortie     Decimal     @db.Decimal
+  ID_consommable String
+  ID_service     Int
+  consommable    consommable @relation(fields: [ID_consommable], references: [ID_consommable], onDelete: Cascade)
+  service        service     @relation(fields: [ID_service], references: [ID_service], onDelete: Cascade)
+}
+
+model type {
+  ID_type          Int           @id @default(autoincrement())
+  Designation_type String?
+  Unite            String?
+  Qte_min_type     Decimal?      @db.Decimal
+  consommable      consommable[]
+}
+
+model utiliser {
+  ID_consommable     String
+  Reference_materiel String
+  consommable        consommable @relation(fields: [ID_consommable], references: [ID_consommable], onDelete: Cascade)
+  materiel           materiel    @relation(fields: [Reference_materiel], references: [Reference_materiel], onDelete: Cascade)
+
+  @@id([ID_consommable, Reference_materiel])
+}

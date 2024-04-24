@@ -1,0 +1,15 @@
+[
+    {
+      "Designation_materiel": "Ordinateur",
+      "Reference_materiel": "MAT001"
+    },
+    {
+      "Designation_materiel": "Imprimante",
+      "Reference_materiel": "MAT002"
+    },
+    {
+      "Designation_materiel": "Scanner",
+      "Reference_materiel": "MAT003"
+    }
+  ]
+  

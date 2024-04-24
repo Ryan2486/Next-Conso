@@ -1,0 +1,21 @@
+[
+    {
+      "ID_type": 1,
+      "Designation_type": "Type A",
+      "Unite": "Unité",
+      "Qte_min_type": 10
+    },
+    {
+      "ID_type": 2,
+      "Designation_type": "Type B",
+      "Unite": "Feuille",
+      "Qte_min_type": 5
+    },
+    {
+      "ID_type": 3,
+      "Designation_type": "Type C",
+      "Unite": "Ensemble",
+      "Qte_min_type": 15
+    }
+  ]
+  

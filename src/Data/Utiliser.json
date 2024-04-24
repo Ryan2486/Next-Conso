@@ -1,0 +1,15 @@
+[
+    {
+      "ID_consommable": "C001",
+      "Reference_materiel": "MAT001"
+    },
+    {
+      "ID_consommable": "C002",
+      "Reference_materiel": "MAT002"
+    },
+    {
+      "ID_consommable": "C003",
+      "Reference_materiel": "MAT003"
+    }
+  ]
+  

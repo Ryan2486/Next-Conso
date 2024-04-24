@@ -1,0 +1,15 @@
+[
+    {
+      "ID_service": 1,
+      "Designation_service": "Service A"
+    },
+    {
+      "ID_service": 2,
+      "Designation_service": "Service B"
+    },
+    {
+      "ID_service": 3,
+      "Designation_service": "Service C"
+    }
+  ]
+  

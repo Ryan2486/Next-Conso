@@ -1,0 +1,21 @@
+[
+    {
+      "ID_entree": 1,
+      "Date_entree": "2024-04-20",
+      "Qte_entree": 50,
+      "ID_consommable": "C001"
+    },
+    {
+      "ID_entree": 2,
+      "Date_entree": "2024-04-21",
+      "Qte_entree": 30,
+      "ID_consommable": "C002"
+    },
+    {
+      "ID_entree": 3,
+      "Date_entree": "2024-04-22",
+      "Qte_entree": 40,
+      "ID_consommable": "C003"
+    }
+  ]
+  
